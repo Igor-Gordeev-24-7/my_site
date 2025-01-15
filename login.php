@@ -50,40 +50,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Авторизация</title>
-	<link rel="stylesheet" href="assets/css/styles.css"> <!-- Подключите свои стили -->
+	<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-	<div class="container">
-		<h1>Авторизация</h1>
 
-		<!-- Вывод ошибок -->
-		<?php if (!empty($errors)): ?>
-		<div class="errors">
-			<?php foreach ($errors as $error): ?>
-			<p><?php echo $error; ?></p>
-			<?php endforeach; ?>
+	<main class="main">
+
+		<div class="form">
+			<h1 class="form__heading">Авторизация</h1>
+
+			<!-- Вывод ошибок -->
+			<?php if (!empty($errors)): ?>
+			<div class="errors">
+				<?php foreach ($errors as $error): ?>
+				<p><?php echo $error; ?></p>
+				<?php endforeach; ?>
+			</div>
+			<?php endif; ?>
+
+			<!-- Форма авторизации -->
+			<form class="form__container" action="login.php" method="POST">
+				<div class="form__group">
+					<label class="form__label" for="email">Email:</label>
+					<input class="form__input" type="email" name="email" id="email"
+						value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>" required>
+				</div>
+
+				<div class="form__group">
+					<label class="form__label" for="password">Пароль:</label>
+					<input class="form__input" type="password" name="password" id="password" required>
+				</div>
+
+				<button type="submit" class="form__btn-reg">Войти</button>
+			</form>
+
+			<p>Нет аккаунта? <a class="form__btn-redirect" href="register.php">Зарегистрируйтесь</a></p>
 		</div>
-		<?php endif; ?>
 
-		<!-- Форма авторизации -->
-		<form action="login.php" method="POST">
-			<div class="form-group">
-				<label for="email">Email:</label>
-				<input type="email" name="email" id="email"
-					value="<?php echo isset($email) ? htmlspecialchars($email) : ''; ?>" required>
-			</div>
+	</main>
 
-			<div class="form-group">
-				<label for="password">Пароль:</label>
-				<input type="password" name="password" id="password" required>
-			</div>
-
-			<button type="submit" class="btn">Войти</button>
-		</form>
-
-		<p>Нет аккаунта? <a href="register.php">Зарегистрируйтесь</a></p>
-	</div>
 </body>
 
 </html>

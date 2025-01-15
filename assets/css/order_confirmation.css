@@ -1,0 +1,51 @@
+/* Блок: order-confirmation */
+.order-confirmation {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+/* Элемент: order-confirmation__container */
+.order-confirmation__container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Элемент: order-confirmation__title */
+.order-confirmation__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Элемент: order-confirmation__message */
+.order-confirmation__message {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Блок: button */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Модификатор: button--primary */
+.button--primary {
+  background-color: #4caf50;
+}
+
+/* Модификатор: button--primary:hover */
+.button--primary:hover {
+  background-color: #45a049;
+}

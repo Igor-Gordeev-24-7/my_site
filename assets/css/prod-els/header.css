@@ -1,0 +1,23 @@
+.header {
+  margin-top: 10px;
+}
+.header__wrapper {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+
+  border-radius: 24px;
+  background: #fff;
+}
+.header__logo {
+  margin-right: auto;
+}
+.header__logo-img {
+}
+.header__nav {
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
+.header__nav-item {
+}

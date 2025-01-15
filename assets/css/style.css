@@ -1,0 +1,40 @@
+@import url(./admin-els/product.css);
+@import url(./admin-els/edit_product.css);
+@import url(./admin-els/create_product.css);
+
+@import url(../css/form-style.css);
+@import url(../fonts/inter/inter.css);
+@import url(../css/prod-els/header.css);
+
+@import url(./cart.css);
+@import url(./items.css);
+@import url(./resets.css);
+@import url(./orders.css);
+@import url(./order_confirmation.css);
+
+:root {
+  --main-bg-color: #7b5ee4;
+  --input-text-color: #403a4b;
+  --input-bg-color: #f8f1ff;
+  --main-btn-color: #985ace;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--main-bg-color);
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  margin-top: 30px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}

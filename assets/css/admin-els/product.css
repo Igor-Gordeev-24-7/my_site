@@ -1,0 +1,86 @@
+/* Блок products */
+.products {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Элемент products__title */
+.products__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Элемент products__btn */
+.products__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.products__btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+/* Элемент products__table */
+.products__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Элемент products__header */
+.products__header {
+  padding: 12px;
+  text-align: left;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  border: 1px solid #ddd;
+}
+
+/* Элемент products__row */
+.products__row {
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+/* Элемент products__cell */
+.products__cell {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Модификатор products__cell--actions */
+.products__cell--actions {
+  text-align: center;
+}
+
+/* Элемент products__link */
+.products__link {
+  text-decoration: none;
+  margin-right: 10px;
+  transition: text-decoration 0.3s;
+}
+
+.products__link:hover {
+  text-decoration: underline;
+}
+
+/* Чередование строк */
+.products__row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Эффект при наведении на строку */
+.products__row:hover {
+  background-color: #f1f1f1;
+}

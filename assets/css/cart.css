@@ -1,0 +1,98 @@
+/* Блок: cart */
+.cart {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.cart__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cart__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.cart__empty {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Блок: table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.table__header {
+  background-color: #f8f9fa;
+}
+
+.table__row {
+  border-bottom: 1px solid #ddd;
+}
+
+.table__cell {
+  padding: 12px;
+  text-align: center;
+}
+
+.table__image {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.table__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.table__button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table__button:hover {
+  background-color: #0056b3;
+}
+
+.table__button--delete {
+  background-color: #dc3545;
+}
+
+.table__button--delete:hover {
+  background-color: #c82333;
+}
+
+/* Блок: cart__checkout */
+.cart__checkout {
+  text-align: right;
+}
+
+.cart__checkout-button {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cart__checkout-button:hover {
+  background-color: #218838;
+}

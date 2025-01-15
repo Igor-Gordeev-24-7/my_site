@@ -1,0 +1,64 @@
+/* Блок: orders */
+.orders {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+/* Элемент: orders__container */
+.orders__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Элемент: orders__title */
+.orders__title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Элемент: orders__empty */
+.orders__empty {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Элемент: orders__table */
+.orders__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Элемент: orders__table-header */
+.orders__table-header {
+  background-color: #f9f9f9;
+}
+
+/* Элемент: orders__table-row */
+.orders__table-row {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Элемент: orders__table-cell */
+.orders__table-cell {
+  padding: 12px;
+  text-align: left;
+}
+
+/* Модификатор: orders__table-cell--header */
+.orders__table-cell--header {
+  font-weight: bold;
+  background-color: #f1f1f1;
+}
+
+/* Элемент: orders__table-body */
+.orders__table-body .orders__table-row:hover {
+  background-color: #f1f1f1;
+}
